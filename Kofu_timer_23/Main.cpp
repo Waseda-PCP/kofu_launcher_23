@@ -19,8 +19,8 @@ void Main()
 			use.insert(id.first);
 			Rect{ i / 2 * 300,(i % 2 == 0 ? 0 : Scene::Size().y / 2),300,Scene::Size().y / 2 }.draw(Palette::White);
 			font((timer.getPCId(id.first) != -1 ? U"PC ID: {}"_fmt(timer.getPCId(id.first)) : U"ConnectID: {}"_fmt(id.first))).drawAt(i / 2 * 300 + 150, (i % 2 == 0 ? 0 : Scene::Size().y / 2) + font.height(), Palette::Black);
-			long long time(id.second >= 0 ? (id.second) : 1 - id.second);
-			font25(U"{}{}:{:0>2}:{:0>2}:{:0>2}"_fmt((id.second >= 0 ? U"" : U"-"),time / (3600 * 24), time / 3600, time / 60, time % 60)).drawAt(i / 2 * 300 + 150, (i % 2 == 0 ? 0 : Scene::Size().y / 2) + font.height() * 2, Palette::Black);
+			long long transitionTime(id.second >= 0 ? (id.second) : 1 - id.second);
+			font25(U"{}{}:{:0>2}:{:0>2}:{:0>2}"_fmt((id.second >= 0 ? U"" : U"-"),transitionTime / (3600 * 24), transitionTime / 3600, transitionTime / 60, transitionTime % 60)).drawAt(i / 2 * 300 + 150, (i % 2 == 0 ? 0 : Scene::Size().y / 2) + font.height() * 2, Palette::Black);
 			if (!state.count(id.first)) state[id.first] = TextEditState();
 			SimpleGUI::TextBoxAt(state[id.first], { i / 2 * 300 + 150, (i % 2 == 0 ? 0 : Scene::Size().y / 2) + font.height() * 2 + font25.height() }, 200.0, 5);
 			if (SimpleGUI::ButtonAt(U"SET", { i / 2 * 300 + 150, (i % 2 == 0 ? 0 : Scene::Size().y / 2) + font.height() * 2 + font25.height() + guiHeight })) {

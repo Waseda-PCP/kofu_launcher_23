@@ -147,6 +147,9 @@
     <ClCompile Include="Protocol.hpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="scenes\title.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\icon.ico">
@@ -220,6 +223,33 @@
     </Image>
     <Image Include="App\example\obj\siv3d-kun-eye.png">
       <Filter>Resource Files\example\obj</Filter>
+    </Image>
+    <Image Include="App\images\chusan.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="App\images\icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="App\images\play.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="App\images\text.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="App\images\title.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="App\images\background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="App\games\atsuo1\icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="App\games\atsuo2\icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="App\games\atsuo3\icon.png">
+      <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
@@ -775,12 +805,24 @@
     <Xml Include="App\example\xml\test.xml">
       <Filter>Resource Files\example\xml</Filter>
     </Xml>
+    <Xml Include="App\games\atsuo3\game.xml" />
+    <Xml Include="App\games\atsuo2\game.xml" />
+    <Xml Include="App\games\atsuo1\game.xml" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DataController.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\manager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\scenes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\title.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

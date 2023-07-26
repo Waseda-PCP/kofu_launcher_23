@@ -8,6 +8,11 @@ class TimerClient {
 	TCPClient client;
 	uint16 port;
 public:
+
+	TimerClient() {
+
+	}
+
 	size_t getTimeLeft()  {
 		return time_left;
 	}
