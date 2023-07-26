@@ -396,3 +396,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Windows Run File
+*.exe
+
+# Intermediate Folder
+*/Intermediate/
