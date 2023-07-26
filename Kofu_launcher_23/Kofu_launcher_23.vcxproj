@@ -150,9 +150,9 @@
     <Image Include="App\example\texture\uv.png" />
     <Image Include="App\example\texture\wood.jpg" />
     <Image Include="App\example\windmill.png" />
-    <Image Include="App\games\atsuo1\icon.png" />
-    <Image Include="App\games\atsuo2\icon.png" />
-    <Image Include="App\games\atsuo3\icon.png" />
+    <Image Include="App\games\chu1\icon.png" />
+    <Image Include="App\games\chu3\icon.png" />
+    <Image Include="App\games\chu2\icon.png" />
     <Image Include="App\icon.ico" />
     <Image Include="App\images\background.png" />
     <Image Include="App\images\chusan.png" />
@@ -328,9 +328,9 @@
     <Xml Include="App\example\objdetect\haarcascade\frontal_face_alt2.xml" />
     <Xml Include="App\example\xml\config.xml" />
     <Xml Include="App\example\xml\test.xml" />
-    <Xml Include="App\games\atsuo1\game.xml" />
-    <Xml Include="App\games\atsuo2\game.xml" />
-    <Xml Include="App\games\atsuo3\game.xml" />
+    <Xml Include="App\games\chu1\game.xml" />
+    <Xml Include="App\games\chu3\game.xml" />
+    <Xml Include="App\games\chu2\game.xml" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataController.hpp" />

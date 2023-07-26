@@ -194,7 +194,10 @@ void Scenes::Selects::drawIcon(const Texture& gameIcon, double leftPos, int pos)
 	leftPos += move;
 	const auto& gameIconSize = Min(gameIcon.size().x, gameIcon.size().y);
 	const auto& clipedGameIcon = gameIcon(double(gameIcon.size().x - gameIconSize) / 2, double(gameIcon.size().y - gameIconSize) / 2, gameIconSize, gameIconSize);
-	clipedGameIcon.resized((Scene::Height() / 2) * sized).draw(leftPos, Scene::Height() - (double)Scene::Width() * title.size().y / title.size().x - (double)Scene::Height() / 2);
+	{
+		const ScopedRenderStates2D sampler{ SamplerState::ClampNearest };
+		clipedGameIcon.resized((Scene::Height() / 2) * sized).draw(leftPos, Scene::Height() - (double)Scene::Width() * title.size().y / title.size().x - (double)Scene::Height() / 2);
+	}
 	RoundRect{ leftPos,Scene::Height() - (double)Scene::Width() * title.size().y / title.size().x - (double)Scene::Height() / 2, Scene::Height() / 2 * sized, Scene::Height() / 2 * sized, 5 * sized }.drawFrame(20 * sized, borderColor);
 }
 

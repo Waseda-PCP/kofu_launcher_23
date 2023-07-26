@@ -242,13 +242,13 @@
     <Image Include="App\images\background.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="App\games\atsuo1\icon.png">
+    <Image Include="App\games\chu1\icon.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="App\games\atsuo2\icon.png">
+    <Image Include="App\games\chu3\icon.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="App\games\atsuo3\icon.png">
+    <Image Include="App\games\chu2\icon.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
@@ -805,9 +805,9 @@
     <Xml Include="App\example\xml\test.xml">
       <Filter>Resource Files\example\xml</Filter>
     </Xml>
-    <Xml Include="App\games\atsuo3\game.xml" />
-    <Xml Include="App\games\atsuo2\game.xml" />
-    <Xml Include="App\games\atsuo1\game.xml" />
+    <Xml Include="App\games\chu2\game.xml" />
+    <Xml Include="App\games\chu3\game.xml" />
+    <Xml Include="App\games\chu1\game.xml" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
